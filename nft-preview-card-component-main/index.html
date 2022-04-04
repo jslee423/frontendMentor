@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: hsl(217, 54%, 11%);
+      color: white;
+    }
+
+    .nftBox {
+      background: hsl(216, 50%, 16%);
+      width: 350px;
+      /* height: 600px; */
+      margin: auto;
+      border-radius: 15px;
+      margin-top: 5%;
+    }
+
+    .nftImage {
+      width: 350px;
+      padding-top: 5%;
+    }
+
+    .nftImage img {
+      width: 300px;
+      display: block;
+      margin: auto;
+      /* margin-top: 25px; */
+      border-radius: 10px;
+    }
+
+    .creatorInfo img {
+      display: inline;
+      width: 30px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+
+    .nftDetails {
+      margin: 7%;
+    }
+
+    .ndftDetails img {
+      display: inline;
+    }
+
+    .nftDetails p {
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+    }
+
+    .nftDetails h2 {
+      font-weight: 400;
+    }
+
+    .nftDetails h2:hover {
+      font-weight: 400;
+      color: hsl(178, 100%, 50%);
+    }
+
+    #etherPrice {
+      color: hsl(178, 100%, 50%);
+      font-weight: 700;
+      width: 100px;
+    }
+
+    #daysLeft {
+      width: 100px;
+    }
+
+    .creatorInfo {
+      width: 350px;
+      margin: 7%;
+      margin-bottom: 7%;
+    }
+
+    #clockImg {
+      padding-left: 85px;
+    }
+
+    #creator {
+      padding-left: 5px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .line {
+      background: hsl(215, 32%, 27%);
+      width: 300px;
+      height: 1px;
+      margin: auto;
+    }
+
+    .nftDetails h3 {
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
+    }
+
+    #creatorName:hover {
+      color: white;
+    }
+
+    .nftImage img:hover {
+      opacity: 0.3;
+      background: cyan;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="nftBox">
+    <div class="nftImage">
+      <img src="images/image-equilibrium.jpg"/>  
+    </div>
+    <div class="nftDetails">
+      <h2>Equilibrium #3429</h2>
+      <h3>Our Equilibrium collection promotes balance and calm.</h3>
+      <table>
+        <tr>
+         <td><img src='images/icon-ethereum.svg' alt="ethereum icon"/></td>
+         <td><p id="etherPrice">0.041 ETH</p></td>
+         <td id="clockImg"><img src='images/icon-clock.svg' alt="clock icon"/></td>
+         <td><p id="daysLeft">3 days left</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="line"></div>
+    <div class="creatorInfo">
+      <table>
+        <tr>
+         <td><img src='images/image-avatar.png' alt="user profile picture icon"/></td>
+         <td id="creator"><p>Creation of <span id="creatorName">Jules Wyvern</span></p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
