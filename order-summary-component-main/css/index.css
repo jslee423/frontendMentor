@@ -1,0 +1,140 @@
+@media (min-width: 375px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+}
+
+.orderSummaryMain {
+    background: white;
+    width: 450px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.orderSummaryHeader img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.orderSummaryTitle {
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-top: 9%;
+}
+
+.orderSummaryBlurb {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.orderPlan {
+    background: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    width: 350px;
+    margin: auto;
+}
+
+.orderPlan table {
+    width: 350px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#orderPlanIcon {
+    width: 70px;
+}
+
+#orderPlanName {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+#orderChange {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+    color: hsl(245, 75%, 52%);
+    padding-left: 10%;
+    text-decoration: underline;
+}
+
+#orderChange:hover {
+    color: hsl(245, 60%, 58%);
+}
+
+.submitButton {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.submitButton button {
+    width: 350px;
+    height: 50px;
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    border-style: none;
+    border-radius: 12px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0px 10px 40px 1px hsl(246, 91%, 87%);
+}
+
+.submitButton button:hover {
+    background: hsl(245, 60%, 58%);
+}
+
+.cancelButton {
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.cancelButton button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+    border-style: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancelButton button:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
