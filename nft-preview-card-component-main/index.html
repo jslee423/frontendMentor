@@ -34,15 +34,46 @@
     .nftImage {
       width: 350px;
       padding-top: 5%;
+      display: inline-block;
+      position: relative;
     }
 
-    .nftImage img {
+    /* .nftImage #viewImg {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      width: 50px;
+      margin: auto;
+      margin-top: 25px;
+    } */
+    .nftImage #viewImg {
+      display: none;
+      margin: auto;
+      position: absolute;
+      left: 7%;
+      top: 5.5%;
+      z-index: 99;
+      background: hsl(178, 100%, 50%);
+      padding: 127px 127px;
+      border-radius: 12px;
+      opacity: 45%;
+    }
+
+    .nftImage:hover #viewImg {
+      display: block;
+    }
+
+    .nftImage #nftImg {
       width: 300px;
       display: block;
       margin: auto;
       /* margin-top: 25px; */
       border-radius: 10px;
     }
+
+    
 
     .creatorInfo img {
       display: inline;
@@ -114,17 +145,17 @@
       color: white;
     }
 
-    .nftImage img:hover {
-      opacity: 0.3;
-      background: cyan;
-    }
+    
 
   </style>
 </head>
 <body>
   <div class="nftBox">
     <div class="nftImage">
-      <img src="images/image-equilibrium.jpg"/>  
+      <div class="viewImageDiv">
+      <img src="images/icon-view.svg" id="viewImg"/>
+      </div>
+      <img src="images/image-equilibrium.jpg" id="nftImg"/>  
     </div>
     <div class="nftDetails">
       <h2>Equilibrium #3429</h2>
