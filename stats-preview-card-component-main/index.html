@@ -9,25 +9,45 @@
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css"/>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  
+  <main>
+    <div class="previewCard">
+      <div class="stats">
+        <h1 class="header">Get <span class="accent">insights</span> that help your business grow.</h1>
 
-  Get insights that help your business grow.
+        <p class="summary">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+        <table class="statDetails">
+          <tr>
+            <td>
+              <h2>10k+</h2><p>COMPANIES</p>
+            </td>
+            <td>
+              <h2>314</h2><p>TEMPLATES</p>
+            </td>
+            <td>
+              <h2>12m+</h2><p>QUERIES</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <img class="headerImage" src="images/image-header-desktop.jpg"/>
+    </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">jason lee</a>.
+    </div>
+  </main>
 </body>
 </html>
