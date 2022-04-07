@@ -1,0 +1,139 @@
+@media (max-width: 500px) {
+    .panels {
+        flex-direction: column;
+    }
+
+    .sedan {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius:0%;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+/* @media (min-width: 1440px) {
+    .panels {
+        flex-direction: row;
+        border-radius: 0px;
+    }
+
+    .sedan {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .luxury {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+} */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background: hsl(0, 0%, 95%);
+}
+
+.panels {
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    width: 300px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.panel > * {
+    width: 210px;
+    margin: auto;
+}
+
+.panel img {
+    width: 65px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.panel h1 {
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 8%;
+}
+
+.panel p  {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 23px;
+    margin-bottom: 30%;
+}
+
+.sedan {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.learnMore {
+    border-radius: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+    border-style: none;
+    font-size: 15px;
+    height: 48px;
+    width: 145px;
+    margin-left: 14%;
+    margin-bottom: 16%;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan button:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suv button:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.luxury button:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
