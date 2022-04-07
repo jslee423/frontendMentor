@@ -4,44 +4,47 @@
     }
 
     .sedan {
-        border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        border-bottom-left-radius:0%;
     }
 
     .luxury {
         border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 }
 
-/* @media (min-width: 1440px) {
+@media (min-width: 501px) {
     .panels {
         flex-direction: row;
         border-radius: 0px;
     }
 
     .sedan {
-        border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
 
     .luxury {
         border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
-} */
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
     background: hsl(0, 0%, 95%);
+    max-width: 1440px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
 }
 
 .panels {
     display: flex;
-    justify-content: center;
 }
 
 .panel {
@@ -78,7 +81,6 @@ body {
 .sedan {
     background: hsl(31, 77%, 52%);
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .suv {
@@ -87,7 +89,6 @@ body {
 
 .luxury {
     background: hsl(179, 100%, 13%);
-    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
@@ -116,19 +117,19 @@ body {
 }
 
 .sedan button:hover {
-    background: hsl(31, 77%, 52%);
+    background: transparent;
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
 }
 
 .suv button:hover {
-    background: hsl(184, 100%, 22%);
+    background: transparent;
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
 }
 
 .luxury button:hover {
-    background: hsl(179, 100%, 13%);
+    background: transparent;
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
 }
