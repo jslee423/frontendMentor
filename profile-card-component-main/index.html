@@ -9,27 +9,34 @@
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <main class="profileCard">
+    <img src="images/image-victor.jpg" src="profile picture of victor" class="profilePic"/>
+    <h3 class="userName">Victor Crest <span class="highlighted">26</span></h3>
+    <p class="highlighted location">London</p>
+    <hr>
+    <table class="userStats">
+      <tr>
+        <td>
+          <span class="headers">80K</span><br/>Followers
+        </td>
+        <td>
+          <span class="headers">803K</span><br/>Likes
+        </td>
+        <td>
+          <span class="headers">1.4K</span><br/>Photos
+        </td>
+      </tr>
+    </table>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">jason lee</a>.
   </div>
 </body>
 </html>
