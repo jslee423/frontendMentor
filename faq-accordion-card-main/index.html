@@ -12,134 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    html {
-      background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-    }
-
-    body {
-      font-family: 'Kumbh Sans', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .faqBox {
-      background: url('images/illustration-woman-online-desktop.svg'), url('images/bg-pattern-desktop.svg') white;
-      background-repeat: no-repeat;
-      background-size: auto, 472px;
-      height: 500px;
-      width: 900px;
-      border-radius: 20px;
-      background-position: -80px, -80px;
-      margin-top: 10%;
-      box-shadow: 0px 15px 30px hsl(237, 12%, 33%);
-    }
-
-    .boxImg {
-      margin-left: -92px;
-      margin-top: 205px;
-      position: fixed;
-    }
-
-    .questionList {
-      width: 50%;
-      margin-left: 52%;
-      margin-top: 7%;
-    }
-
-    /* Style the buttons that are used to open and close the accordion panel */
-    .accordion {
-      background-color: white;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 75%;
-      text-align: left;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      font-family: 'Kumbh Sans', sans-serif;
-      border-bottom: 1px solid hsl(240, 5%, 91%);
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .accordion:hover {
-      color: hsl(14, 88%, 65%);
-    }
-
-    .accordion:focus {
-      border-bottom: none;
-    }
-
-    .active {
-      color: black;
-      font-weight: 700;
-    }
-
-    /* Style the accordion panel. Note: hidden by default */
-    /* .panel {
-      padding: 0 18px;
-      background-color: white;
-      display: none;
-      overflow: hidden;
-      border-bottom: 1px solid hsl(240, 5%, 91%);
-    } */
-
-    .panel {
-      /* padding: 0 18px;
-      padding-left: 0; */
-      background-color: white;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      /* border-bottom: 1px solid hsl(240, 5%, 91%); */
-      width: 70%;
-      font-size: 12px;
-    }
-
-    .accordion:after {
-      content: '\22C1'; /* Unicode character for "plus" sign (+) */
-      font-size: 13px;
-      color: #777;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .active:after {
-      content: "\22C0"; /* Unicode character for "minus" sign (-) */
-    }
-  </style>
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
   <div class="faqBox">
     <img class="boxImg" src="images/illustration-box-desktop.svg" alt="illustrated 3d box"/>
-    <!-- <div class="questionList">
-      How many team members can I invite?
-      You can invite up to 2 additional users on the Free plan. There is no limit on 
-      team members for the Premium plan.
-
-      What is the maximum file upload size?
-      No more than 2GB. All files in your account must fit your allotted storage space.
-
-      How do I reset my password?
-      Click “Forgot password” from the login page or “Change password” from your profile page.
-      A reset link will be emailed to you.
-
-      Can I cancel my subscription?
-      Yes! Send us a message and we'll process your request no questions asked.
-
-      Do you provide additional support?
-      Chat and email support is available 24/7. Phone lines are open during normal business hours.
-    </div> -->
     <div class="questionList">
       <h1>FAQ</h1>
       <button class="accordion">How many team members can I invite?</button>
@@ -169,47 +46,11 @@
     </div>
   </div>
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">jason lee</a>.
-  </div> -->
+  </div>
 
-  <script>
-    let acc = document.getElementsByClassName("accordion");
-    let i;
-    let box = document.querySelector(".boxImg");
-    console.log(box);
-    // box.style.marginLeft = "-120px";
-
-    // this is to add the drop down functionality for the accordion
-    // for (i = 0; i < acc.length; i++) {
-    //   acc[i].addEventListener("click", function() {
-    //     /* Toggle between adding and removing the "active" class,
-    //     to highlight the button that controls the panel */
-    //     this.classList.toggle("active");
-
-    //     /* Toggle between hiding and showing the active panel */
-    //     var panel = this.nextElementSibling;
-    //     if (panel.style.display === "block") {
-    //       panel.style.display = "none";
-    //     } else {
-    //       panel.style.display = "block";
-    //     }
-    //   });
-    // }
-
-    // this adds slide down animation when the accordion item is clicked
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-      });
-    }
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
