@@ -106,7 +106,7 @@ body {
 .accordion:after {
   content: '\22C1'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  color: hsl(14, 88%, 65%);
   float: right;
   margin-left: 5px;
 }
