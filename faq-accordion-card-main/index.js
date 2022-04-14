@@ -24,12 +24,19 @@ console.log(box);
 // this adds slide down animation when the accordion item is clicked
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+        let active = document.querySelectorAll(".accordion.active");
+        console.log(active);
+        for (let j = 0; j < active.length; j++) {
+            active[j].classList.remove("active");
+            active[j].nextElementSibling.style.maxHeight = null;
+        }
+        this.classList.toggle("active");
+        panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
   acc[i].addEventListener("mouseover", moveBox);

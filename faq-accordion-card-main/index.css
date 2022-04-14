@@ -45,10 +45,14 @@ body {
   margin-top: 8%;
 }
 
+.questionList h1 {
+    color: hsl(238, 29%, 16%);
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: white;
-  color: #444;
+  color: hsl(238, 29%, 16%);
   cursor: pointer;
   padding: 18px;
   width: 75%;
@@ -72,7 +76,7 @@ body {
 }
 
 .active {
-  color: black;
+  color: hsl(238, 29%, 16%);
   font-weight: 700;
 }
 
@@ -85,10 +89,12 @@ body {
   border-bottom: 1px solid hsl(240, 5%, 91%);
 } */
 
+/* styling for the slide down menu */
 .panel {
   /* padding: 0 18px;
   padding-left: 0; */
   background-color: white;
+  color: hsl(240, 6%, 50%);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
