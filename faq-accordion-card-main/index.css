@@ -1,3 +1,128 @@
+/* @media (max-width: 480px) {
+    :root {
+        --size-divisor: 2;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --size-divisor: 1.5;
+    }
+}
+@media (max-width: 1024px) {
+    :root {
+        --size-divisor: 1;
+    }
+}
+@media (max-width: 1200px) {
+    :root {
+        --size-divisor: .67;
+    }
+} */
+@media (max-width: 599px) {
+    .faqBox {
+        background: url("images/bg-pattern-mobile.svg") white;
+        background-repeat: no-repeat;
+        /* height: 500px; */
+        width: 340px;
+        /* width: calc(900px / var(--size-divisor)); */
+        border-radius: 20px;
+        background-position: top;
+        margin-top: 40%;
+        box-shadow: 0px 15px 30px hsl(237, 12%, 33%);
+    }
+
+    .boxImg {
+        display: none;
+    }
+
+    .boxImgMobile {
+        margin-left: 45px;
+        margin-top: -114px;
+        position: fixed;
+        width: 250px;
+    }
+
+    .questionList {
+        margin-top: 40%;
+        margin-bottom: 12%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: white;
+        color: hsl(238, 29%, 16%);
+        cursor: pointer;
+        padding: 18px;
+        width: 75%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-family: 'Kumbh Sans', sans-serif;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        padding-left: 0px;
+        padding-right: 0px;
+        /* font-size: calc(13px / var(--size-divisor)); */
+    }
+
+    .questionList h1 {
+        text-align: center;
+    }
+}
+@media (min-width: 600px) {
+    .faqBox {
+        background: url('images/illustration-woman-online-desktop.svg'), url('images/bg-pattern-desktop.svg') white;
+        background-repeat: no-repeat;
+        background-size: auto, 472px;
+        height: 500px;
+        width: 900px;
+        /* width: calc(900px / var(--size-divisor)); */
+        border-radius: 20px;
+        background-position: -80px, -80px;
+        margin-top: 10%;
+        box-shadow: 0px 15px 30px hsl(237, 12%, 33%);
+    }
+
+    .boxImg {
+        margin-left: -92px;
+        margin-top: 205px;
+        position: fixed;
+    }
+
+    .boxImgMobile {
+        display: none;
+    }
+
+    .questionList {
+        width: 50%;
+        margin-left: 52%;
+        margin-top: 7%;
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: white;
+        color: hsl(238, 29%, 16%);
+        cursor: pointer;
+        padding: 18px;
+        width: 75%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-family: 'Kumbh Sans', sans-serif;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        padding-left: 0px;
+        padding-right: 0px;
+        /* font-size: calc(13px / var(--size-divisor)); */
+    }
+}
+
+
+/* default css rules */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -8,109 +133,69 @@
 }
 
 html {
-  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.faqBox {
-  background: url('images/illustration-woman-online-desktop.svg'), url('images/bg-pattern-desktop.svg') white;
-  background-repeat: no-repeat;
-  background-size: auto, 472px;
-  height: 500px;
-  width: 900px;
-  border-radius: 20px;
-  background-position: -80px, -80px;
-  margin-top: 10%;
-  box-shadow: 0px 15px 30px hsl(237, 12%, 33%);
-}
-
-.boxImg {
-  margin-left: -92px;
-  margin-top: 205px;
-  position: fixed;
-}
-
-.questionList {
-  width: 50%;
-  margin-left: 52%;
-  margin-top: 8%;
-}
-
-.questionList h1 {
-    color: hsl(238, 29%, 16%);
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: white;
-  color: hsl(238, 29%, 16%);
-  cursor: pointer;
-  padding: 18px;
-  width: 75%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-family: 'Kumbh Sans', sans-serif;
-  border-bottom: 1px solid hsl(240, 5%, 91%);
-  padding-left: 0px;
-  padding-right: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion:hover {
-  color: hsl(14, 88%, 65%);
+color: hsl(14, 88%, 65%);
 }
 
-.accordion:focus {
-  border-bottom: none;
-}
+/* .accordion:focus {
+    border-bottom: none;
+} */
 
 .active {
-  color: hsl(238, 29%, 16%);
-  font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 /* .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
 } */
 
 /* styling for the slide down menu */
 .panel {
-  /* padding: 0 18px;
-  padding-left: 0; */
-  background-color: white;
-  color: hsl(240, 6%, 50%);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  /* border-bottom: 1px solid hsl(240, 5%, 91%); */
-  width: 70%;
-  font-size: 12px;
+    /* padding: 0 18px;
+    padding-left: 0; */
+    background-color: white;
+    color: hsl(240, 6%, 50%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* border-bottom: 1px solid hsl(240, 5%, 91%); */
+    width: 70%;
+    font-size: 12px;
 }
 
 .accordion:after {
-  content: '\22C1'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: hsl(14, 88%, 65%);
-  float: right;
-  margin-left: 5px;
+    content: '\22C1'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    /* font-size: calc(13px / var(--size-divisor)); */
+    color: hsl(14, 88%, 65%);
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-  content: "\22C0"; /* Unicode character for "minus" sign (-) */
+    content: "\22C0"; /* Unicode character for "minus" sign (-) */
+}
+
+.questionList h1 {
+    color: hsl(238, 29%, 16%);
 }

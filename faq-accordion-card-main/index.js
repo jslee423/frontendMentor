@@ -28,14 +28,17 @@ for (i = 0; i < acc.length; i++) {
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      this.style.borderBottom = '1px solid hsl(240, 5%, 91%)';
     } else {
         let active = document.querySelectorAll(".accordion.active");
         console.log(active);
         for (let j = 0; j < active.length; j++) {
             active[j].classList.remove("active");
+            active[j].style.borderBottom = '1px solid hsl(240, 5%, 91%)';
             active[j].nextElementSibling.style.maxHeight = null;
         }
         this.classList.toggle("active");
+        this.style.borderBottom = 'none';
         panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
